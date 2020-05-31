@@ -6,8 +6,9 @@ draft: false
 
 ## 유정원(Yu jung won)
 
-|[Github](github.com/yjw5344)|[Email](yjw5344@hanmail.net)|
-|---|---|
+|[Github](https://github.com/yjw5344/)|[e-mail](mailto:yjw5344@hanmail.net)|
+|----|----|
+
 
 
 - 오스템 임플란트(Osstem Implant) 
