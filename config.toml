@@ -1,5 +1,5 @@
 baseURL = "https://yjw5344.github.io"
-title   = "Hello Friend NG"
+title   = "log"
 languageCode = "en-us"
 theme = "hello-friend-ng"
 
@@ -7,9 +7,12 @@ PygmentsCodeFences = true
 PygmentsStyle = "monokai"
 
 paginate  = 10
-rssLimit  = 10  # Maximum number of items in the RSS feed.
-copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License." # This message is only used by the RSS template.
 
+## Not Use RSS
+# rssLimit  = 10  # Maximum number of items in the RSS feed.
+# copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License." # This message is only used by the RSS template.
+
+## GoogleAnalytics & Disqus - 좀 찾아보고 나중에 추가하자
 # googleAnalytics = ""
 # disqusShortname = ""
 
@@ -28,7 +31,7 @@ enableRobotsTXT = true
 enableGitInfo   = false
 enableEmoji     = true
 enableMissingTranslationPlaceholders = false
-disableRSS     = false
+disableRSS     = true
 disableSitemap = false
 disable404     = false
 disableHugoGeneratorInject = false
@@ -37,7 +40,7 @@ disableHugoGeneratorInject = false
   posts = "/posts/:year/:month/:title/"
 
 [author]
-  name = "Jane Doe"
+  name = "jungwon"
 
 [blackfriday]
   hrefTargetBlank = true
@@ -53,25 +56,30 @@ disableHugoGeneratorInject = false
   dateformNum     = "2006-01-02"
   dateformNumTime = "2006-01-02 15:04 -0700"
 
-  # Metadata mostly used in document's head
-  description = "Nice theme for homepages and blogs"
+  ## Metadata mostly used in document's head
+  ## 정확히 어떤 값을 의미하는지 모르겠음...
+  description = ""
   keywords = ""
   images = [""]
 
-  homeSubtitle = "Hello Friend NG"
+  ## Home 화면 SubTitle
+  homeSubtitle = "Programming, Dev, Toy Projects & Life ..."
 
-  # Prefix of link to the git commit detail page. GitInfo must be enabled.
-  # gitUrl = ""
+  ## Prefix of link to the git commit detail page. GitInfo must be enabled.
+  ## 정확한 기능을 아직 모르겠음...
+  #gitUrl = "github.com/yjw5344"
 
-  # Set disableReadOtherPosts to true in order to hide the links to other posts.
+  ## Set disableReadOtherPosts to true in order to hide the links to other posts.
   disableReadOtherPosts = false
 
-  # Integrate Javascript files or stylesheets by adding the url to the external assets or by
-  # linking local files with their path relative to the static folder, e.g. "css/styles.css"
-  customCSS = []
+  ## Integrate Javascript files or stylesheets by adding the url to the external assets or by
+  ## linking local files with their path relative to the static folder, e.g. "css/styles.css"
+  ## 커스텀 CSS or Javascript를 사용 가능하게 함
+  customCSS = ["/css/dropdown.css"]
   customJS  = []
 
-  # Toggle this option need to rebuild SCSS, requires extended version of Hugo
+  ## Toggle this option need to rebuild SCSS, requires extended version of Hugo
+  ## 정확히 어떤 기능인지 모르겠음...
   justifyContent = false  # Set "text-align: justify" to .content.
 
   # Default theme "light" or "dark"
@@ -87,60 +95,90 @@ disableHugoGeneratorInject = false
   [params.logo]
     logoText     = "$ cd /home/"
     logoHomeLink = "/"
-    # Set true to remove the logo cursor entirely.
+    ## Set true to remove the logo cursor entirely.
+    ## 로고 커서 기능 On/Off
     # logoCursorDisabled = false
-    # Set to a valid CSS color to change the cursor in the logo.
+    ## Set to a valid CSS color to change the cursor in the logo.
+    ## 로고 커서 색상을 결정
     # logoCursorColor    = "#67a2c9"
-    # Set to a valid CSS time value to change the animation duration, "0s" to disable.
+    ## Set to a valid CSS time value to change the animation duration, "0s" to disable.
+    ## 로고 커서 깜빡이는 주기를 설정
     # logoCursorAnimate  = "2s"
 
+  ## Not Use Portrait
+  ## Portrait : 배경화면 이미지
   [params.portrait]
-    path = "/img/image.jpg"
-    alt = "Portrait"
+    # path = "/img/image.jpg"
+    # alt = "Portrait"
 
-  # Social icons
-  [[params.social]]
-    name = "twitter"
-    url  = "https://twitter.com/"
-
+  ## Social icons
   [[params.social]]
     name = "email"
-    url  = "mailto:nobody@example.com"
+    url  = "mailto:yjw5344@hanmail.net"
 
   [[params.social]]
     name = "github"
-    url  = "https://github.com/"
+    url  = "https://github.com/yjw5344"
 
   [[params.social]]
     name = "linkedin"
-    url  = "https://www.linkedin.com/"
+    url  = "https://www.linkedin.com/in/jungwon-yu-64a18a19a/"    
 
-  [[params.social]]
-    name = "stackoverflow"
-    url  = "https://www.stackoverflow.com/"
+  ## Not Use Social 
+  # [[params.social]]
+  #     name = "twitter"
+  #     url  = "https://twitter.com/"
 
+  # [[params.social]]
+  #   name = "stackoverflow"
+  #   url  = "https://www.stackoverflow.com/"
+
+## Hugo Blog Language
+## subTitle : Tab - SubTitle
 [languages]
   [languages.en]
-    subtitle  = "Hello Friend NG Theme"
+    subtitle  = "AAA"
     weight    = 1
-    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+    menuMore = "more"
 
-  [languages.fr]
-    subtitle  = "Hello Friend NG Theme"
-    weight    = 2
-    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+      showMenuItems = 2
+  # Enable to show reading time in minutes for posts
+  showReadingTime = false
 
+sectionPagesMenu = "/posts"
+## Navigation Bar
 [menu]
   [[menu.main]]
     identifier = "about"
     name       = "About"
     url        = "about/"
-  [[menu.main]]
-    identifier = "posts"
-    name       = "Posts"
-    url        = "posts/java"
+    weight     = 1
 
-    [[menu.main]]
-    identifier = "hel"
-    name       = "hel"
-    url        = "posts/python"
+  [[menu.main]]
+  identifier = "test"
+  name       = "Test"
+  url        = "test/"
+  weight     = 1
+
+  [[menu.main]]
+    identifier = "posts"    
+    name       = "Posts"
+    url        = "posts/"    
+    weight     = 2
+
+  [[menu.main]]
+  identifier = "python"
+  name       = "python"  
+  url        = "/posts/python"
+  parent     = "posts"
+  
+
+  [[menu.main]]
+  identifier = "java"  
+  name       = "java"
+  url        = "/posts/java"
+  parent     = "posts"
+  
+
+  
+

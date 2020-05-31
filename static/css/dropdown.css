@@ -1,0 +1,41 @@
+/* The dropdown container */
+.dropdown {
+  float: right;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  margin: 0 0 0 0px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */  
+  padding-left: 5px;  
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  border-radius: 10px;
+  background-color: rgb(59, 61, 67);  
+}
+
+/* Links inside the dropdown */
+.dropdown-content li {
+  border-radius: 10px;
+  float: none;
+  text-align: left;
+  color: white;
+  padding: 10px 10px;  
+  display: block;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content li:hover {
+  background-color: rgb(50,52,56);
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
