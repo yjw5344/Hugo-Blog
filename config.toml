@@ -1,5 +1,5 @@
 baseURL = "https://yjw5344.github.io"
-title   = "log"
+title   = "Blog 🧐"
 languageCode = "en-us"
 theme = "hello-friend-ng"
 
@@ -63,7 +63,7 @@ disableHugoGeneratorInject = false
   images = [""]
 
   ## Home 화면 SubTitle
-  homeSubtitle = "Programming, Dev, Toy Projects & Life ..."
+  homeSubtitle = "개발, 일상, 프로그래밍 등등 사소한 기록을 위한 블로그..."
 
   ## Prefix of link to the git commit detail page. GitInfo must be enabled.
   ## 정확한 기능을 아직 모르겠음...
@@ -137,28 +137,23 @@ disableHugoGeneratorInject = false
 ## subTitle : Tab - SubTitle
 [languages]
   [languages.en]
-    subtitle  = "AAA"
-    weight    = 1
-    menuMore = "more"
-
-      showMenuItems = 2
-  # Enable to show reading time in minutes for posts
-  showReadingTime = false
-
-sectionPagesMenu = "/posts"
+    subtitle  = "jungwon's Blog"
+    showMenuItems = 2
+  
+    
 ## Navigation Bar
 [menu]
   [[menu.main]]
     identifier = "about"
     name       = "About"
-    url        = "about/"
+    url        = "/About"
     weight     = 1
 
   [[menu.main]]
-  identifier = "test"
-  name       = "Test"
-  url        = "test/"
-  weight     = 1
+    identifier = "daily"
+    name       = "Daily"
+    url        = "/daily/"
+    weight     = 1
 
   [[menu.main]]
     identifier = "posts"    
@@ -167,17 +162,22 @@ sectionPagesMenu = "/posts"
     weight     = 2
 
   [[menu.main]]
-  identifier = "python"
-  name       = "python"  
-  url        = "/posts/python"
-  parent     = "posts"
+    identifier = "hugo"
+    name       = "Hugo"  
+    url        = "/posts/hugo"
+    parent     = "posts"
   
+  [[menu.main]]
+    identifier = "dev"  
+    name       = "Dev"
+    url        = "/posts/dev"
+    parent     = "posts"
 
   [[menu.main]]
-  identifier = "java"  
-  name       = "java"
-  url        = "/posts/java"
-  parent     = "posts"
+    identifier = "react"  
+    name       = "React"
+    url        = "/posts/react"
+    parent     = "posts"
   
 
   
